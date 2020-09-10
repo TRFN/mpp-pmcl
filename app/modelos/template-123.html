@@ -1,0 +1,22 @@
+<!-- Exemplo de modelo para template. Nesse caso o recomendável é utilizar a estrura-base do website -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exemplo de login</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>exemplo de login</legend>
+            <content>
+                <form method=post>
+                    %layout% <!-- A variável de layout deve ser utilizada para que assim ela seja refletida no modelo -->
+                </form>
+            </content>
+            <footer>
+                <br />
+                %msg%
+            </footer>
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "contem": {
+        "campo1": {
+            "layout": "inputs/campos/normal",
+            "vars": {
+                "valorpadrao": "",
+                "titulo": "Nome do usuário",
+                "tipo": "text",
+                "id": "email"
+            }
+        },
+        "campo2": {
+            "layout": "inputs/campos/normal",
+            "vars": {
+                "valorpadrao": "",
+                "titulo": "Senha",
+                "tipo": "password",
+                "id": "senha"
+            }
+        },
+        "submit": {
+            "layout": "inputs/campos/normal",
+            "vars": {
+                "valorpadrao": "Entrar",
+                "titulo": "",
+                "tipo": "submit"
+            }
+        }
+    },
+    "montagem": ["campo1","campo2","submit"]
+}

@@ -9,14 +9,56 @@
     "paginas": {
         "default": {
             "caminho": ["/"],
-            "layout": "It's Working!",
+            "layout": "pagina-exemplo",
+            "modelo": "template-123",
+            "scripts": [],
+            "styles": [],
+            "controle": "formularios/processar",
+            "type": "text/html",
+            "persistente": true,
+            "minify": false,
+            "variaveis": {
+                "formulario-123": "formularios/login"
+            }
+        },
+        "outro tipo de carregamento": {
+            "caminho": ["/tipo1"],
+            "layout": "%formulario-456%<br /><br />%msg%<br /><br /><a href='/tipo2'>Outro exemplo</a>",
+            "modelo": "template-123",
+            "scripts": [],
+            "styles": [],
+            "controle": "formularios/processar",
+            "type": "text/html",
+            "persistente": true,
+            "minify": true,
+            "variaveis": {
+                "formulario-456": "formularios/login"
+            }
+        },
+        "outro tipo de carregamento (sem template)": {
+            "caminho": ["/tipo2"],
+            "layout": "%formulario-456%<br /><br />%msg%<br /><br /><a href='/'>Inicio</a>",
             "modelo": false,
             "scripts": [],
             "styles": [],
-            "controle": false,
-            "type": "text/plain",
+            "controle": "formularios/processar",
+            "type": "text/html",
             "persistente": true,
-            "minify": false,
+            "minify": true,
+            "variaveis": {
+                "formulario-456": "formularios/login"
+            }
+        },
+        "página de logout": {
+            "caminho": ["/sair-123"],
+            "layout": "Você realizou logout.<script>setTimeout('location.href=\"/\"',2000)</script>",
+            "modelo": false,
+            "scripts": [],
+            "styles": [],
+            "controle": "logout",
+            "type": "text/html",
+            "persistente": true,
+            "minify": true,
             "variaveis": {}
         }
     }
