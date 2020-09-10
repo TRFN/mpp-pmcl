@@ -37,7 +37,7 @@
         },
         "outro tipo de carregamento (sem template)": {
             "caminho": ["/tipo2"],
-            "layout": "%formulario-456%<br /><br />%msg%<br /><br /><a href='/'>Inicio</a>",
+            "layout": "<form method=post>%formulario-456%</form><br />%msg%<br /><br /><a href='/'>Inicio</a>",
             "modelo": false,
             "scripts": [],
             "styles": [],
